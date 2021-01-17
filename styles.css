@@ -52,7 +52,55 @@ body {
 /**** MAIN ****/
 
 .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1 0 300px;
+}
+
+.searchContainer {
+  text-align: center;
+}
+
+.searchBar {
+  margin-top: 30px;
+  border: 1px solid #dadce0;
+  width: 550px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.searchButtons button {
+  margin: 0px 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+.searchButtons button:hover {
+  box-shadow: 0.5px 0.5px 0 1px #dadce0;
+}
+
+.searchButtons button:focus {
+  outline: none;
+}
+
+.searchButtons {
+  margin: 40px 0px;
+}
+
+.language {
+  font-size: 12px;
+}
+
+.language a {
+  color: #240dab;
+  text-decoration: none;
+}
+
+.language a:hover {
+  text-decoration: underline;
 }
 
 /**** FOOTER ****/
