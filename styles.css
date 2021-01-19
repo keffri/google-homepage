@@ -60,18 +60,38 @@ body {
 
 .searchContainer {
   text-align: center;
+  margin-top: -220px;
 }
 
 .searchBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 30px;
   border: 1px solid #dadce0;
-  width: 550px;
-  height: 50px;
+  width: 575px;
+  height: 45px;
   border-radius: 50px;
 }
 
+.searchInput {
+  border: none;
+  width: 84%;
+  height: 30px;
+  font-size: 16px;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.searchBar:hover,
+.searchBar:focus-within {
+  box-shadow: 0.5px 0.5px 0 1px #dadce0;
+}
+
 .searchButtons button {
-  margin: 0px 20px;
+  margin: 0px 10px;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
@@ -79,11 +99,12 @@ body {
 }
 
 .searchButtons button:hover {
-  box-shadow: 0.5px 0.5px 0 1px #dadce0;
+  box-shadow: 0.5px 0.5px 1px 2px #dadce0;
 }
 
 .searchButtons button:focus {
   outline: none;
+  box-shadow: 0px 0px 1px 1px #4d90fe;
 }
 
 .searchButtons {
@@ -101,6 +122,18 @@ body {
 
 .language a:hover {
   text-decoration: underline;
+}
+
+@media all and (max-width: 600px) {
+  .searchBar {
+    max-width: 90vw;
+  }
+}
+
+@media all and (max-height: 800px) {
+  .searchContainer {
+    margin-top: 0px;
+  }
 }
 
 /**** FOOTER ****/
@@ -176,5 +209,18 @@ body {
 
 .icon {
   height: 35px;
+  cursor: pointer;
+}
+
+.checkerBoard {
+  cursor: pointer;
+}
+
+.magnifyingGlass {
+  height: 20px;
+}
+
+.microphone {
+  height: 20px;
   cursor: pointer;
 }
